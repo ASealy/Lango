@@ -1,0 +1,9 @@
+<ion-view view-title="Chinese">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="item in categories" href="#/app/playlists/{{item.id}}">
+        {{item.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
