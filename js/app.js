@@ -50,7 +50,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent': {
           templateUrl: 'templates/chinese.html',
-          controller: 'Ctrl'
+          controller: 'MyCtrl'
         }
       }
     })
@@ -59,7 +59,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent': {
           templateUrl: 'templates/french.html',
-          controller: 'Ctrl'
+          controller: 'MyCtrl'
         }
       }
     })
@@ -68,7 +68,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent': {
           templateUrl: 'templates/german.html',
-          controller: 'Ctrl'
+          controller: 'MyCtrl'
         }
       }
     })
@@ -77,7 +77,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent': {
           templateUrl: 'templates/italian.html',
-          controller: 'Ctrl'
+          controller: 'MyCtrl'
         }
       }
     })
@@ -86,7 +86,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent': {
           templateUrl: 'templates/japanese.html',
-          controller: 'Ctrl'
+          controller: 'MyCtrl'
         }
       }
     })
@@ -95,7 +95,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent': {
           templateUrl: 'templates/russian.html',
-          controller: 'Ctrl'
+          controller: 'MyCtrl'
         }
       }
     })
@@ -105,7 +105,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent': {
           templateUrl: 'templates/spanish.html',
-          controller: 'Ctrl'
+          controller: 'MyCtrl'
         }
       }
     })
@@ -114,7 +114,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent': {
           templateUrl: 'templates/turkish.html',
-          controller: 'Ctrl'
+          controller: 'MyCtrl'
         }
       }
     })
@@ -129,5 +129,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/about');
+  $urlRouterProvider.otherwise('/app/chinese');
 });

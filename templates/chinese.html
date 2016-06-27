@@ -1,9 +1,22 @@
 <ion-view view-title="Chinese">
-  <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="item in categories" href="#/app/playlists/{{item.id}}">
-        {{item.title}}
-      </ion-item>
-    </ion-list>
-  </ion-content>
+	<ion-content>
+		<ion-list >
+			<div ng-repeat="category in categories_chinese" >
+				<ion-item class="item-stable wrap icon"
+				ng-click="toggleCategory(category)"
+				ng-class="{active: isCategoryShown(category)}">
+				<i ng-class="isCategoryShown(category) ? 'ion-minus' : 'ion-plus'"></i>
+				&nbsp;
+				<i class="ion-{{category.icon}}"></i>
+				&nbsp;
+				{{category.name}}
+			</ion-item>
+			<ion-item class="item-accordion"
+			ng-repeat="contents in category.contents"
+			ng-show="isCategoryShown(category)">
+			{{contents}}
+		</ion-item>
+	</div>
+</ion-list>
+</ion-content>
 </ion-view>
