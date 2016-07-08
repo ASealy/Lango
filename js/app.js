@@ -90,16 +90,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-     .state('app.russian', {
-      url: '/russian',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/russian.html',
-          controller: 'MyCtrl'
-        }
-      }
-    })
-    
     .state('app.spanish', {
       url: '/spanish',
       views: {
@@ -129,5 +119,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/chinese');
+  $urlRouterProvider.otherwise('/app/about');
 });
